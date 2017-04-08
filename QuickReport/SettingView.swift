@@ -2,7 +2,7 @@
 //  SettingView.swift
 //  QuickReport
 //
-//  Created by border___ on 2017/04/08.
+//  Created by borderhub on 2017/04/08.
 //  Copyright © 2017 border___. All rights reserved.
 //
 

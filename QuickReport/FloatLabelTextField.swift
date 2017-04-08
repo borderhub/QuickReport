@@ -2,8 +2,8 @@
 //  FloatLabelTextField.swift
 //  QuickReport
 //
-//  Created by 調 原作 on 2017/04/08.
-//  Copyright © 2017年 border___. All rights reserved.
+//  Created by borderhub on 2017/04/08.
+//  Copyright © 2017 border___. All rights reserved.
 //
 
 import UIKit
