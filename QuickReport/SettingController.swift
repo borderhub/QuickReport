@@ -79,12 +79,17 @@ class SettingController : FormViewController {
     
     private func showAlert(type: String, texts: TextRow...) {
         
-        let targetEmail: TextRow? = self.form.rowBy(tag: "targetEmail")
-        let userName: TextRow? = self.form.rowBy(tag: "userName")
-        let userPassword: TextRow? = self.form.rowBy(tag: "userPassword")
-        let port: TextRow? = self.form.rowBy(tag: "port")
+        let targetEmail: EmailFloatLabelRow? = self.form.rowBy(tag: "targetEmail")
+        let userName: EmailFloatLabelRow? = self.form.rowBy(tag: "userName")
+        let userPassword: PasswordFloatLabelRow? = self.form.rowBy(tag: "userPassword")
+        let port: IntFloatLabelRow? = self.form.rowBy(tag: "port")
         
-        if self.isFieldValue(texts: targetEmail!,userName!,userPassword!,port!) {
+        let targetEmailText = (targetEmail!.value != nil) ? targetEmail!.value! : ""
+        let userNameText = (userName!.value != nil) ? userName!.value! : ""
+        let userPasswordText = (userPassword!.value != nil) ? userPassword!.value! : ""
+        let portText = (port!.value?.description != nil) ? port!.value?.description : ""
+        
+        if self.isFieldValue(texts: targetEmailText,userNameText,userPasswordText,portText!) {
         
             // create alert
             let alert = UIAlertController(
@@ -95,14 +100,10 @@ class SettingController : FormViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler:{ action in
                 switch(type) {
                     case "Save":
-                        let targetEmailText = (targetEmail!.value != nil) ? targetEmail!.value! : ""
-                        let userNameText = (userName!.value != nil) ? userName!.value! : ""
-                        let userPasswordText = (userPassword!.value != nil) ? userPassword!.value! : ""
-                        let portText = (port!.value != nil) ? port!.value! : ""
                         if (targetEmailText.characters.count) > 0 { self.userDefault.setValue(targetEmailText, forKey: "targetEmail") }
                         if (userNameText.characters.count) > 0 { self.userDefault.setValue(userNameText, forKey: "userName") }
                         if (userPasswordText.characters.count) > 0 { self.userDefault.setValue(userPasswordText, forKey: "userPassword") }
-                        if (portText.characters.count) > 0 { self.userDefault.setValue(portText, forKey: "port") }
+                        if (portText?.characters.count)! > 0 { self.userDefault.setValue(portText, forKey: "port") }
                         break
                     case "All Clear":
                         self.userDefault.removeObject(forKey: "targetEmail")
@@ -112,7 +113,7 @@ class SettingController : FormViewController {
                         targetEmail?.value = ""
                         userName?.value = ""
                         userPassword?.value = ""
-                        port?.value = ""
+                        port?.value = nil
                         targetEmail?.updateCell()
                         userName?.updateCell()
                         userPassword?.updateCell()
@@ -126,10 +127,10 @@ class SettingController : FormViewController {
         }
     }
     
-    private func isFieldValue(texts: TextRow...) -> Bool {
+    private func isFieldValue(texts:String...) -> Bool {
         var isFieldValue: Bool = false
         for data in texts {
-            var text = (data.value != nil) ? data.value! : ""
+            var text = (data != nil) ? data : ""
             print("\(text)")
             if text.characters.count > 0 {
                 isFieldValue = true
