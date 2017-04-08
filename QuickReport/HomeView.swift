@@ -77,5 +77,4 @@ class HomeView: UIView {
         //table.frame = self.frame
     }
     
-    
 }
