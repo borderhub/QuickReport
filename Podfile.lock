@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.3.0)
+  - AlamofireObjectMapper (4.0.1):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Eureka (2.0.1)
+  - KeyClip (1.4.0)
+  - mailcore2-ios (0.6.4)
+  - ObjectMapper (2.2.2)
+  - Realm (2.3.0):
+    - Realm/Headers (= 2.3.0)
+  - Realm/Headers (2.3.0)
+  - RealmSwift (2.3.0):
+    - Realm (= 2.3.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - Eureka
+  - KeyClip
+  - mailcore2-ios
+  - ObjectMapper
+  - RealmSwift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
+  Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
+  KeyClip: 2768bf4e68dac11f96efaa666c63a8eb14d4b866
+  mailcore2-ios: 3ff0be2fa553d4da9c11d39c11d51863c768f24f
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  Realm: 69d7de9aa569a11eed490aaabc8f2109e3985ecf
+  RealmSwift: dc6f99ea55e59490cec69c860f91932b6bf7efb6
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: e0c448a565928f9f990e931476a05a2b7023b35d
+
+COCOAPODS: 1.2.0.rc.1

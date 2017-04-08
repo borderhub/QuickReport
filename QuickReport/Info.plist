@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>uses pictures to upload to Cloudionary</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>stores pictures to upload to Cloudionary</string>
 </dict>
 </plist>

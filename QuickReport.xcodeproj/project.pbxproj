@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ECC141F5B90C74ABC415BF7 /* Pods_QuickReportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4D21CD2141DC698296DEA1 /* Pods_QuickReportUITests.framework */; };
+		4F25048E0CDD4EAEE14535C7 /* Pods_QuickReport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7E227E8F76C675BAA5F6CC /* Pods_QuickReport.framework */; };
+		58DAFBC4B95277E4CCCDEA64 /* Pods_QuickReportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08417725C834ACEA94DBEA /* Pods_QuickReportTests.framework */; };
+		9002C1B41E94A4F600DC480A /* SendMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002C1B31E94A4F600DC480A /* SendMail.swift */; };
+		9002C1B81E94A76700DC480A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002C1B71E94A76700DC480A /* HomeController.swift */; };
+		9002C1BB1E94A7E700DC480A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002C1BA1E94A7E700DC480A /* HomeView.swift */; };
+		9002C1BF1E94A85500DC480A /* SendReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002C1BE1E94A85500DC480A /* SendReportController.swift */; };
+		9002C1C11E94A86300DC480A /* SendReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002C1C01E94A86300DC480A /* SendReportView.swift */; };
+		9002C1C31E94A93300DC480A /* SendReportConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002C1C21E94A93300DC480A /* SendReportConfirmController.swift */; };
+		9002C1C71E94A96A00DC480A /* SendReportConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002C1C61E94A96A00DC480A /* SendReportConfirmView.swift */; };
+		90C4FF181E986DAC00ECBCD9 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4FF171E986DAC00ECBCD9 /* SettingController.swift */; };
+		90C4FF1E1E98DDAC00ECBCD9 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4FF1D1E98DDAC00ECBCD9 /* SettingView.swift */; };
+		90C4FF211E98DE9900ECBCD9 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4FF201E98DE9900ECBCD9 /* FloatLabelTextField.swift */; };
 		90CE4A371E94928400830F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE4A361E94928400830F9E /* AppDelegate.swift */; };
 		90CE4A391E94928400830F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE4A381E94928400830F9E /* ViewController.swift */; };
 		90CE4A3C1E94928400830F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CE4A3A1E94928400830F9E /* Main.storyboard */; };
@@ -35,6 +48,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278164739E15F46A8A23D73E /* Pods-QuickReportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReportTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickReportTests/Pods-QuickReportTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43315639399F67646726B089 /* Pods-QuickReport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReport.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickReport/Pods-QuickReport.release.xcconfig"; sourceTree = "<group>"; };
+		493E8E21E871F39F9AC956AE /* Pods-QuickReportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReportTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickReportTests/Pods-QuickReportTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A08417725C834ACEA94DBEA /* Pods_QuickReportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickReportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75006638627DCBBB9189B2B3 /* Pods-QuickReportUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReportUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickReportUITests/Pods-QuickReportUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7D4D21CD2141DC698296DEA1 /* Pods_QuickReportUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickReportUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9002C1B31E94A4F600DC480A /* SendMail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMail.swift; sourceTree = "<group>"; };
+		9002C1B51E94A56100DC480A /* QuickReport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickReport-Bridging-Header.h"; sourceTree = "<group>"; };
+		9002C1B71E94A76700DC480A /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		9002C1BA1E94A7E700DC480A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9002C1BE1E94A85500DC480A /* SendReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendReportController.swift; sourceTree = "<group>"; };
+		9002C1C01E94A86300DC480A /* SendReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendReportView.swift; sourceTree = "<group>"; };
+		9002C1C21E94A93300DC480A /* SendReportConfirmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendReportConfirmController.swift; sourceTree = "<group>"; };
+		9002C1C61E94A96A00DC480A /* SendReportConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendReportConfirmView.swift; sourceTree = "<group>"; };
+		90C4FF171E986DAC00ECBCD9 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		90C4FF1D1E98DDAC00ECBCD9 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		90C4FF201E98DE9900ECBCD9 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		90CE4A331E94928400830F9E /* QuickReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CE4A361E94928400830F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90CE4A381E94928400830F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +79,9 @@
 		90CE4A551E94928400830F9E /* QuickReportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickReportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CE4A591E94928400830F9E /* QuickReportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickReportUITests.swift; sourceTree = "<group>"; };
 		90CE4A5B1E94928400830F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97CB373EE35C3092D86ACCEE /* Pods-QuickReportUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReportUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickReportUITests/Pods-QuickReportUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A89286EA2D5FEC94C94C38A1 /* Pods-QuickReport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickReport/Pods-QuickReport.debug.xcconfig"; sourceTree = "<group>"; };
+		BD7E227E8F76C675BAA5F6CC /* Pods_QuickReport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickReport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F25048E0CDD4EAEE14535C7 /* Pods_QuickReport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58DAFBC4B95277E4CCCDEA64 /* Pods_QuickReportTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +105,106 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECC141F5B90C74ABC415BF7 /* Pods_QuickReportUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9002C1AB1E94A3D700DC480A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9002C1C81E94B71C00DC480A /* Setting */,
+				9002C1BC1E94A83200DC480A /* SendReport */,
+				9002C1B61E94A6F600DC480A /* Home */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9002C1AC1E94A3E500DC480A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90C4FF1C1E98DD9100ECBCD9 /* Setting */,
+				9002C1BD1E94A83800DC480A /* SendReport */,
+				9002C1B91E94A7AE00DC480A /* Home */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9002C1AD1E94A3ED00DC480A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9002C1AE1E94A3F900DC480A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9002C1B31E94A4F600DC480A /* SendMail.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		9002C1B61E94A6F600DC480A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9002C1B71E94A76700DC480A /* HomeController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		9002C1B91E94A7AE00DC480A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9002C1BA1E94A7E700DC480A /* HomeView.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		9002C1BC1E94A83200DC480A /* SendReport */ = {
+			isa = PBXGroup;
+			children = (
+				9002C1BE1E94A85500DC480A /* SendReportController.swift */,
+				9002C1C21E94A93300DC480A /* SendReportConfirmController.swift */,
+			);
+			name = SendReport;
+			sourceTree = "<group>";
+		};
+		9002C1BD1E94A83800DC480A /* SendReport */ = {
+			isa = PBXGroup;
+			children = (
+				9002C1C01E94A86300DC480A /* SendReportView.swift */,
+				9002C1C61E94A96A00DC480A /* SendReportConfirmView.swift */,
+			);
+			name = SendReport;
+			sourceTree = "<group>";
+		};
+		9002C1C81E94B71C00DC480A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				90C4FF171E986DAC00ECBCD9 /* SettingController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		90C4FF1C1E98DD9100ECBCD9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				90C4FF1D1E98DDAC00ECBCD9 /* SettingView.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		90C4FF1F1E98DE8300ECBCD9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				90C4FF201E98DE9900ECBCD9 /* FloatLabelTextField.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		90CE4A2A1E94928400830F9E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +212,8 @@
 				90CE4A4D1E94928400830F9E /* QuickReportTests */,
 				90CE4A581E94928400830F9E /* QuickReportUITests */,
 				90CE4A341E94928400830F9E /* Products */,
+				A438C4E3A21ABD2E5FC7D262 /* Pods */,
+				CEEEAE50084F96F65DDBBC9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +230,11 @@
 		90CE4A351E94928400830F9E /* QuickReport */ = {
 			isa = PBXGroup;
 			children = (
+				90C4FF1F1E98DE8300ECBCD9 /* Helpers */,
+				9002C1AE1E94A3F900DC480A /* Util */,
+				9002C1AD1E94A3ED00DC480A /* Model */,
+				9002C1AC1E94A3E500DC480A /* View */,
+				9002C1AB1E94A3D700DC480A /* Controller */,
 				90CE4A361E94928400830F9E /* AppDelegate.swift */,
 				90CE4A381E94928400830F9E /* ViewController.swift */,
 				90CE4A3A1E94928400830F9E /* Main.storyboard */,
@@ -106,6 +242,7 @@
 				90CE4A421E94928400830F9E /* LaunchScreen.storyboard */,
 				90CE4A451E94928400830F9E /* Info.plist */,
 				90CE4A3D1E94928400830F9E /* QuickReport.xcdatamodeld */,
+				9002C1B51E94A56100DC480A /* QuickReport-Bridging-Header.h */,
 			);
 			path = QuickReport;
 			sourceTree = "<group>";
@@ -128,6 +265,29 @@
 			path = QuickReportUITests;
 			sourceTree = "<group>";
 		};
+		A438C4E3A21ABD2E5FC7D262 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A89286EA2D5FEC94C94C38A1 /* Pods-QuickReport.debug.xcconfig */,
+				43315639399F67646726B089 /* Pods-QuickReport.release.xcconfig */,
+				278164739E15F46A8A23D73E /* Pods-QuickReportTests.debug.xcconfig */,
+				493E8E21E871F39F9AC956AE /* Pods-QuickReportTests.release.xcconfig */,
+				97CB373EE35C3092D86ACCEE /* Pods-QuickReportUITests.debug.xcconfig */,
+				75006638627DCBBB9189B2B3 /* Pods-QuickReportUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CEEEAE50084F96F65DDBBC9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD7E227E8F76C675BAA5F6CC /* Pods_QuickReport.framework */,
+				5A08417725C834ACEA94DBEA /* Pods_QuickReportTests.framework */,
+				7D4D21CD2141DC698296DEA1 /* Pods_QuickReportUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90CE4A5E1E94928400830F9E /* Build configuration list for PBXNativeTarget "QuickReport" */;
 			buildPhases = (
+				B9696D0E0582638C292A3B90 /* [CP] Check Pods Manifest.lock */,
 				90CE4A2F1E94928400830F9E /* Sources */,
 				90CE4A301E94928400830F9E /* Frameworks */,
 				90CE4A311E94928400830F9E /* Resources */,
+				1B9C4A9C1D993E8BE5A882FE /* [CP] Embed Pods Frameworks */,
+				113C87445C01E4927A1D29BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +315,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90CE4A611E94928400830F9E /* Build configuration list for PBXNativeTarget "QuickReportTests" */;
 			buildPhases = (
+				5E7CA763FB07C61BF52F2DDF /* [CP] Check Pods Manifest.lock */,
 				90CE4A461E94928400830F9E /* Sources */,
 				90CE4A471E94928400830F9E /* Frameworks */,
 				90CE4A481E94928400830F9E /* Resources */,
+				5660AD1C4D0AEB46BD0A3C17 /* [CP] Embed Pods Frameworks */,
+				7E6F3BFCCFB5F354489575EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90CE4A641E94928400830F9E /* Build configuration list for PBXNativeTarget "QuickReportUITests" */;
 			buildPhases = (
+				8D0E6023E184CCD77D583303 /* [CP] Check Pods Manifest.lock */,
 				90CE4A511E94928400830F9E /* Sources */,
 				90CE4A521E94928400830F9E /* Frameworks */,
 				90CE4A531E94928400830F9E /* Resources */,
+				2FEA60072A0E50F3B379A9A4 /* [CP] Embed Pods Frameworks */,
+				F2F52360FECFEB55FE3FA23C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,12 +429,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		113C87445C01E4927A1D29BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickReport/Pods-QuickReport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B9C4A9C1D993E8BE5A882FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickReport/Pods-QuickReport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FEA60072A0E50F3B379A9A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickReportUITests/Pods-QuickReportUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5660AD1C4D0AEB46BD0A3C17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickReportTests/Pods-QuickReportTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E7CA763FB07C61BF52F2DDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6F3BFCCFB5F354489575EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickReportTests/Pods-QuickReportTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D0E6023E184CCD77D583303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9696D0E0582638C292A3B90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2F52360FECFEB55FE3FA23C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickReportUITests/Pods-QuickReportUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90CE4A2F1E94928400830F9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9002C1C11E94A86300DC480A /* SendReportView.swift in Sources */,
+				9002C1BF1E94A85500DC480A /* SendReportController.swift in Sources */,
+				9002C1B41E94A4F600DC480A /* SendMail.swift in Sources */,
+				9002C1C31E94A93300DC480A /* SendReportConfirmController.swift in Sources */,
+				9002C1BB1E94A7E700DC480A /* HomeView.swift in Sources */,
+				9002C1C71E94A96A00DC480A /* SendReportConfirmView.swift in Sources */,
+				90C4FF211E98DE9900ECBCD9 /* FloatLabelTextField.swift in Sources */,
+				9002C1B81E94A76700DC480A /* HomeController.swift in Sources */,
 				90CE4A3F1E94928400830F9E /* QuickReport.xcdatamodeld in Sources */,
+				90C4FF181E986DAC00ECBCD9 /* SettingController.swift in Sources */,
+				90C4FF1E1E98DDAC00ECBCD9 /* SettingView.swift in Sources */,
 				90CE4A391E94928400830F9E /* ViewController.swift in Sources */,
 				90CE4A371E94928400830F9E /* AppDelegate.swift in Sources */,
 			);
@@ -363,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -408,7 +725,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -419,6 +736,7 @@
 		};
 		90CE4A5F1E94928400830F9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89286EA2D5FEC94C94C38A1 /* Pods-QuickReport.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8APTUES444;
@@ -426,12 +744,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.border---.QuickReport";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReport/QuickReport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		90CE4A601E94928400830F9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43315639399F67646726B089 /* Pods-QuickReport.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8APTUES444;
@@ -439,12 +759,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.border---.QuickReport";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReport/QuickReport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		90CE4A621E94928400830F9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278164739E15F46A8A23D73E /* Pods-QuickReportTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -453,6 +775,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.border---.QuickReportTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReport/QuickReport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickReport.app/QuickReport";
 			};
@@ -460,6 +783,7 @@
 		};
 		90CE4A631E94928400830F9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 493E8E21E871F39F9AC956AE /* Pods-QuickReportTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +792,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.border---.QuickReportTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReport/QuickReport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickReport.app/QuickReport";
 			};
@@ -475,6 +800,7 @@
 		};
 		90CE4A651E94928400830F9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CB373EE35C3092D86ACCEE /* Pods-QuickReportUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8APTUES444;
@@ -482,6 +808,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.border---.QuickReportUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReport/QuickReport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = QuickReport;
 			};
@@ -489,6 +816,7 @@
 		};
 		90CE4A661E94928400830F9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75006638627DCBBB9189B2B3 /* Pods-QuickReportUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8APTUES444;
@@ -496,6 +824,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.border---.QuickReportUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReport/QuickReport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = QuickReport;
 			};
@@ -520,6 +849,7 @@
 				90CE4A601E94928400830F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90CE4A611E94928400830F9E /* Build configuration list for PBXNativeTarget "QuickReportTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +858,7 @@
 				90CE4A631E94928400830F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90CE4A641E94928400830F9E /* Build configuration list for PBXNativeTarget "QuickReportUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +867,7 @@
 				90CE4A661E94928400830F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
