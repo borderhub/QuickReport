@@ -11,6 +11,7 @@ import AVFoundation
 
 class SendReportController: UIViewController, AVCapturePhotoCaptureDelegate, SendReportControllerDelegate {
     
+    let userDefault = UserDefaults.standard
     var sendReportConfirmController: SendReportConfirmController?
     var getSendReportView:SendReportView!
     var returnMessage: String?
@@ -68,14 +69,39 @@ class SendReportController: UIViewController, AVCapturePhotoCaptureDelegate, Sen
     }
     
     internal func onTakeIt(sender: UIButton) {
-        self.getSendReportView.captureHandler()
-
-        let settingsForMonitoring = AVCapturePhotoSettings()
-        //settingsForMonitoring.flashMode = .auto
-        settingsForMonitoring.isAutoStillImageStabilizationEnabled = true
-        settingsForMonitoring.isHighResolutionPhotoEnabled = false
-
-        getSendReportView.stillImageOutput?.capturePhoto(with: settingsForMonitoring, delegate: self)
+        
+        let isTargetEmail = self.userDefault.string(forKey: "targetEmail")
+        let isUserName = self.userDefault.string(forKey: "userName")
+        let isTargetPassword = self.userDefault.string(forKey: "userPassword")
+        let isPort = (self.userDefault.string(forKey: "port")?.description)!
+        
+        if self.isFieldValue(texts: isTargetEmail!,isUserName!,isTargetPassword!,isPort) {
+            self.getSendReportView.captureHandler()
+            
+            let settingsForMonitoring = AVCapturePhotoSettings()
+            //settingsForMonitoring.flashMode = .auto
+            settingsForMonitoring.isAutoStillImageStabilizationEnabled = true
+            settingsForMonitoring.isHighResolutionPhotoEnabled = false
+            
+            getSendReportView.stillImageOutput?.capturePhoto(with: settingsForMonitoring, delegate: self)
+            
+        } else {
+            // create alert
+            let alert = UIAlertController(
+                title: "Please set a configration",
+                message: "",
+                preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler:{ action in
+                // move settingView
+                let settingController = SettingController()
+                settingController.modalTransitionStyle = UIModalTransitionStyle.partialCurl
+                self.navigationController?.pushViewController(settingController, animated: true)
+            }))
+            alert.addAction(UIAlertAction(title: "cancel", style: .cancel))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
@@ -100,6 +126,19 @@ class SendReportController: UIViewController, AVCapturePhotoCaptureDelegate, Sen
             
         }
         self.sendReportConfirmController?.dismiss(animated: true, completion: nil)
+    }
+    
+    private func isFieldValue(texts:String...) -> Bool {
+        var isFieldValue: Bool = false
+        var num = 0
+        for tuple in texts.enumerated() {
+            print(tuple.offset, tuple.element)
+            if tuple.element.characters.count > 0 && tuple.element != "0" {
+                num += 1
+            }
+        }
+        if num == 4 { isFieldValue = true }
+        return isFieldValue
     }
     
     override func viewDidAppear(_ animated: Bool) {

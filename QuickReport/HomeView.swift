@@ -26,6 +26,7 @@ extension UIButton {
 
 class HomeView: UIView {
     
+    let userDefault = UserDefaults.standard
     var settingButton: UIButton
     var reportButton: UIButton
     
@@ -62,6 +63,11 @@ class HomeView: UIView {
         
         self.addSubview(reportButton);
         self.addSubview(settingButton);
+        
+        self.userDefault.setValue("", forKey: "targetEmail")
+        self.userDefault.setValue("", forKey: "userName")
+        self.userDefault.setValue("", forKey: "userPassword")
+        self.userDefault.setValue(0, forKey: "port")
         
         self.backgroundColor = UIColor(red: 8, green: 8, blue: 8, alpha: 0.1)
     }

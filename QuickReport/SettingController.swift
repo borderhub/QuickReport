@@ -87,7 +87,7 @@ class SettingController : FormViewController {
         let targetEmailText = (targetEmail!.value != nil) ? targetEmail!.value! : ""
         let userNameText = (userName!.value != nil) ? userName!.value! : ""
         let userPasswordText = (userPassword!.value != nil) ? userPassword!.value! : ""
-        let portText = (port!.value?.description != nil) ? port!.value?.description : ""
+        let portText = (port!.value?.description != nil) ? port!.value?.description : "0"
         
         if self.isFieldValue(texts: targetEmailText,userNameText,userPasswordText,portText!) {
         
